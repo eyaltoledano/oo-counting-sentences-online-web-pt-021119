@@ -16,9 +16,9 @@ class String
 
   def count_sentences
     sentences = 0
+    binding.pry
     split = self.split
     split.each do |item|
-      binding.pry
       if sentence? or question? or exclamation?
         sentences += 1
       elsif item.end_with("...")
