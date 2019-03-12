@@ -22,7 +22,6 @@ class String
         sentences += 1
       end
     end
-    binding.pry
     sentences
   end
 end
