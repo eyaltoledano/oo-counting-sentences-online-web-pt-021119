@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    sentences = 0
+    sentences = []
     binding.pry
     split = self.split
     split.each do |word|
