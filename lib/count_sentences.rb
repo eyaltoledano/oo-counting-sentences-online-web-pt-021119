@@ -18,6 +18,11 @@ class String
     sentences = 0
     binding.pry
     split = self.split
-    split.count
+    split.each do |word|
+      if word.sentence? || word.question? || word.exclamation?
+        sentences << word
+      end
+    end
+
   end
 end
