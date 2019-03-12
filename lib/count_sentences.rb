@@ -18,6 +18,6 @@ class String
     sentences = 0
     binding.pry
     split = self.split
-    split.count if sentence?
+    split.count
   end
 end
