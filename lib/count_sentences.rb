@@ -19,7 +19,7 @@ class String
     split = self.split
     split.each do |item|
       if sentence? or question? or exclamation?
-        sentences + 1
+        sentences += 1
       end
     end
     binding.pry
