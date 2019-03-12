@@ -23,6 +23,6 @@ class String
         sentences << word
       end
     end
-
+    sentences.count
   end
 end
