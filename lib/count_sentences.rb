@@ -18,13 +18,6 @@ class String
     sentences = 0
     binding.pry
     split = self.split
-    split.each do |item|
-      if sentence? or question? or exclamation?
-        sentences += 1
-      elsif item.end_with("...")
-        sentences
-      end
-    end
-    sentences
+    split.count
   end
 end
