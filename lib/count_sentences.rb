@@ -18,6 +18,7 @@ class String
     sentences = 0
     split = self.split
     split.each do |item|
+      binding.pry
       if sentence? or question? or exclamation?
         sentences += 1
       elsif item.end_with("...")
